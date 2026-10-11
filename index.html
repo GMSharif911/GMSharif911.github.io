@@ -1,0 +1,123 @@
+<!doctype html><html lang="en-AU"><head><title>G M Shariful Portfolio</title><meta name="description" content="Business Analyst portfolio: process maps, requirements and decision-support dashboards."><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: hero with proof points, then a work grid of four samples, then about and contact. White clinical base, navy type, sky-blue eyebrow bars. */
+:root{
+  --bg:#f5f7fa; --panel:#ffffff; --line:#e1e6ee; --ink:#0a1f44; --muted:#5a6b85;
+  --accent:#0b5cad; --sky:#1ba6df; --soft:#e8f1fa;
+  --f-body:"Plus Jakarta Sans",Arial,system-ui,sans-serif; --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55;margin:0}
+a{color:var(--accent)}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px;padding-block:28px 48px;display:flex;flex-direction:column;gap:28px}
+.bar{display:block;width:36px;height:4px;border-radius:2px;background:var(--sky);margin-bottom:12px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.hero{position:relative;overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:40px 36px 34px;box-shadow:0 10px 30px -22px rgba(10,31,68,.35)}
+.hero .ring{position:absolute;right:-140px;top:-170px;width:520px;height:520px;border-radius:50%;border:60px solid var(--soft);pointer-events:none}
+.hero .ring2{position:absolute;right:60px;bottom:-230px;width:340px;height:340px;border-radius:50%;border:26px solid color-mix(in srgb,var(--sky) 14%,transparent);pointer-events:none}
+.hero>*{position:relative}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.02;letter-spacing:-.03em;margin:8px 0 10px;font-weight:800;text-wrap:balance}
+.role{font-size:clamp(17px,2.2vw,21px);font-weight:700;color:var(--accent);margin:0 0 14px}
+.intro{max-width:62ch;color:var(--muted);font-size:16px;margin:0}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:14px;border-radius:10px;padding:11px 18px;border:1px solid var(--line);color:var(--ink);background:var(--panel)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,.card:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+.proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:30px}
+.proof div{border-top:3px solid var(--sky);padding-top:10px;min-width:0}
+.proof b{display:block;font-size:24px;letter-spacing:-.02em;color:var(--accent);line-height:1.15}
+.proof span{font-size:13px;color:var(--muted)}
+h2{font-size:26px;letter-spacing:-.02em;margin:0 0 4px;font-weight:800}
+.sub{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.card{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(10,31,68,.05);transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 36px -22px rgba(10,31,68,.4)}
+.thumb{aspect-ratio:16/9;background:var(--soft);overflow:hidden;max-width:100%}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top left;display:block;transition:transform .5s ease}
+.card:hover .thumb img{transform:scale(1.03)}
+.cbody{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tag{align-self:flex-start;font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--soft);border-radius:999px;padding:3px 10px}
+.tag.live{color:#0e6b3f;background:#e3f3e9}
+.cbody h3{margin:0;font-size:19px;letter-spacing:-.01em}
+.cbody p{margin:0;color:var(--muted);font-size:14px}
+.open{margin-top:auto;padding-top:8px;font-weight:700;font-size:14px;color:var(--accent)}
+.about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
+.panel ul{margin:10px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chips span{font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--bg)}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:820px){.proof{grid-template-columns:repeat(2,minmax(0,1fr))}.grid,.about{grid-template-columns:minmax(0,1fr)}.hero{padding:30px 22px}}
+@media (prefers-reduced-motion:reduce){.card,.thumb img,.btn{transition:none}.card:hover,.btn:hover{transform:none}}
+</style>
+
+<div class="wrap">
+  <section class="hero">
+    <div class="ring"></div><div class="ring2"></div>
+    <span class="bar"></span>
+    <div class="eyebrow">Portfolio · Sydney, Australia</div>
+    <h1>G M Shariful</h1>
+    <p class="role">Business Analyst · Healthcare IT and Government Digital Transformation</p>
+    <p class="intro">I turn complex clinical and business needs into systems people trust. Below are sample pieces of work showing how I map processes, write requirements and design decision-support reporting.</p>
+    <div class="cta">
+      <a class="btn primary" href="dashboard.html">Open the interactive dashboard</a>
+      <a class="btn" href="https://www.linkedin.com/in/gmshariful/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+    <div class="proof">
+      <div><b>80% / 60%</b><span>of Australian public / private hospitals served by the platform I am sole BA on</span></div>
+      <div><b>$259M</b><span>NT Government EPR (TrakCare), reporting to Ministry of Health level</span></div>
+      <div><b>Months → 24 hrs</b><span>customer feedback to executives, after process mapping and automation</span></div>
+      <div><b>7+ years</b><span>business analysis across health and government</span></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="bar"></span>
+    <h2>Sample work</h2>
+    <p class="sub">Hopkinsdale Health is a fictional organisation. The case study is real work with details generalised.</p>
+    <div class="grid">
+      <a class="card" href="dashboard.html">
+        <div class="thumb"><img src="assets/dashboard.jpg" alt="Executive dashboard with KPI tiles and a world map of members"></div>
+        <div class="cbody"><span class="tag live">Interactive</span><h3>Executive Dashboard: Global Membership</h3><p>KPIs, prior-year trends, a clickable world map, pipeline by stage and renewals at risk with a detail view. Filter by year, region, country and account manager.</p><span class="open">Open dashboard →</span></div>
+      </a>
+      <a class="card" href="assets/process-map.pdf" target="_blank" rel="noopener">
+        <div class="thumb"><img src="assets/process-map.jpg" alt="As-is and to-be process map for membership renewal"></div>
+        <div class="cbody"><span class="tag">Process map</span><h3>Membership Renewal: As-Is vs To-Be</h3><p>Mapping a manual, spreadsheet-driven process, pinpointing pain points and designing an automated future state.</p><span class="open">View PDF →</span></div>
+      </a>
+      <a class="card" href="assets/sample-brd.pdf" target="_blank" rel="noopener">
+        <div class="thumb"><img src="assets/brd-preview.jpg" alt="Three pages of a sample business requirements document"></div>
+        <div class="cbody"><span class="tag">Requirements</span><h3>Sample BRD: Membership Renewal Automation</h3><p>Objectives, scope, stakeholders, prioritised requirements with acceptance criteria, non-functional requirements, risks and traceability.</p><span class="open">View PDF →</span></div>
+      </a>
+      <a class="card" href="assets/case-study.pdf" target="_blank" rel="noopener">
+        <div class="thumb"><img src="assets/case-study-preview.jpg" alt="One-page case study on feedback automation"></div>
+        <div class="cbody"><span class="tag">Case study</span><h3>Customer Feedback: Months to 24 Hours</h3><p>How discovery, process mapping and automation brought customer feedback to executives within a day.</p><span class="open">View PDF →</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="panel">
+      <span class="bar"></span>
+      <h2>About</h2>
+      <ul>
+        <li>Sole Business Analyst on the ACHS Hub, serving 80% of public and 60% of private Australian hospitals, within a network supporting 1,600+ member organisations across 25 countries</li>
+        <li>Business Analyst on the $259M NT Government EPR (TrakCare), reporting to Ministry of Health level</li>
+        <li>ACHS Employee of the Month, September 2025</li>
+        <li>Master of Technology, Enterprise Systems and Business Analytics. Certified through IIBA, PMI and Microsoft</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <span class="bar"></span>
+      <h2>Toolkit</h2>
+      <div class="chips"><span>Requirements elicitation</span><span>Process mapping</span><span>BRDs and user stories</span><span>UAT</span><span>Dynamics 365</span><span>Power Platform</span><span>Power BI</span><span>SharePoint</span><span>Azure DevOps</span><span>JIRA</span><span>Confluence</span><span>TrakCare</span></div>
+    </div>
+  </section>
+
+  <footer><span>© G M Shariful</span><span>Samples use fictional data unless stated.</span></footer>
+</div>
+
+</body></html>
